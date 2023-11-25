@@ -1,0 +1,31 @@
+package ders10_stingManipulation;
+
+public class C09_soru {
+    public static void main(String[] args) {
+
+        /*
+          Kullanicidan bir cumle ve bir metin alin
+          cumlede metnin durumuna gore
+          1- cumle metni icermiyor
+          2- cumle metni sadece 1 kere iceriyor
+          3- cumle metni birden fazla iceriyor
+          seceneklerinden uygun olani yazdirin
+         */
+
+        String cumle="java cok guzeldir cok";
+        String metin="cok";
+
+        int ilkindex=cumle.indexOf(metin);
+        int sonindex=cumle.lastIndexOf(metin);
+
+        if (ilkindex==(-1)){
+            System.out.println("cumle metni icermiyor");}
+        else if (ilkindex==sonindex) {
+            System.out.println("cumle metni birden fazla iceriyor");
+
+        }else {
+            System.out.println("cumle metni sadece 1 kere iceriyor");}
+
+
+    }
+}
